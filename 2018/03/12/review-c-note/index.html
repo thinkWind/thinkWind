@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/3 | 追凨</title>
+  <title>C语言复习笔记 | 追凨</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人小博客，喜欢各种折腾。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="追凨">
-<meta property="og:url" content="http://yoursite.com/archives/2018/03/index.html">
+  <meta name="description" content="春节过完已经快半个月了，今年的IT业犹如凌冬将至。往年招聘行情，今年特别清淡。我做的iOS行业更是如此，有好事之徒，还编了句话 - 肚子好饿，早知道不学iOS了。 在这样的环境下，自己不试图变更，就是给自己未来挖坑。然后又回想到自己的差基础，于是就有了这篇复习笔记。 此篇笔记主要记录 阅读 C 相关书籍， 数据结构，算法等。希望日后在日常使用中对自己有所作用。 C语言基础：  - C是一种强大、简">
+<meta name="keywords" content="复习,C,笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言复习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/03/12/review-c-note/index.html">
 <meta property="og:site_name" content="追凨">
-<meta property="og:description" content="个人小博客，喜欢各种折腾。">
+<meta property="og:description" content="春节过完已经快半个月了，今年的IT业犹如凌冬将至。往年招聘行情，今年特别清淡。我做的iOS行业更是如此，有好事之徒，还编了句话 - 肚子好饿，早知道不学iOS了。 在这样的环境下，自己不试图变更，就是给自己未来挖坑。然后又回想到自己的差基础，于是就有了这篇复习笔记。 此篇笔记主要记录 阅读 C 相关书籍， 数据结构，算法等。希望日后在日常使用中对自己有所作用。 C语言基础：  - C是一种强大、简">
+<meta property="og:updated_time" content="2018-03-12T06:30:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="追凨">
-<meta name="twitter:description" content="个人小博客，喜欢各种折腾。">
+<meta name="twitter:title" content="C语言复习笔记">
+<meta name="twitter:description" content="春节过完已经快半个月了，今年的IT业犹如凌冬将至。往年招聘行情，今年特别清淡。我做的iOS行业更是如此，有好事之徒，还编了句话 - 肚子好饿，早知道不学iOS了。 在这样的环境下，自己不试图变更，就是给自己未来挖坑。然后又回想到自己的差基础，于是就有了这篇复习笔记。 此篇笔记主要记录 阅读 C 相关书籍， 数据结构，算法等。希望日后在日常使用中对自己有所作用。 C语言基础：  - C是一种强大、简">
   
     <link rel="alternative" href="/atom.xml" title="追凨" type="application/atom+xml">
   
@@ -158,36 +160,64 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="code-review-c-note" class="article article-type-code " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-code">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/12/review-c-note/" class="archive-article-date">
-  	<time datetime="2018-03-12T06:06:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/12/review-c-note/">C语言复习笔记</a>
+    <h1 class="article-title" itemprop="name">
+      C语言复习笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/03/12/review-c-note/" class="archive-article-date">
+  	<time datetime="2018-03-12T06:06:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>春节过完已经快半个月了，今年的IT业犹如凌冬将至。往年招聘行情，今年特别清淡。我做的iOS行业更是如此，有好事之徒，还编了句话 - 肚子好饿，早知道不学iOS了。 在这样的环境下，自己不试图变更，就是给自己未来挖坑。然后又回想到自己的差基础，于是就有了这篇复习笔记。</p>
+<p>此篇笔记主要记录 阅读 C 相关书籍， 数据结构，算法等。希望日后在日常使用中对自己有所作用。</p>
+<p>C语言基础： </p>
+<pre><code>- C是一种强大、简洁的编程语言。它提供了有用的编程工具和硬件良好的控制。且其易移植性。
+- C是一种需要编译的语言。C编译器和连接器是将C语言源代码转换为可执行代码的程序。
+- 编程的主要步骤是：定义程序目标，设计程序，编写代码，编译，运行，测试和调试，维护和修改程序。
+- C语言程序是有一个或者多个函数组成的。每一个程序都包含一个名为main()的函数，此函数为程序的入口函数。
+- 每个C语句都是一个针对计算机的指令，并以一个分号作为结束标志。声明语句为变量指定名字，且指定其存储的数据类型。
+- 一门语言的语法是一套规则，用于管理这种语言中的合法语句组合在一起的方式
+</code></pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -207,19 +237,96 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/03/12/review-c-note/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -242,8 +349,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
